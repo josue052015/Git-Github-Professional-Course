@@ -1,0 +1,52 @@
+pwd => es para ver el directorio actual 
+
+cd => es para cambiar directorio
+
+ls => lista los archivos que estan en ese directorio
+
+ls -al => lista todos los archivos en forma de lista, incluso los ocultos
+
+cd .. => se utiliza para regresar al directorio anterior
+
+~ => representa la carpeta home del usuario
+
+mkdir nombre => crea una carpeta
+
+touch nombre.txt => se utiliza para crear archivos que no tienen nada dentro
+
+cat => se utiliza para ver el contenido de un archivo
+
+history => es para ver el historial de todos los comandos que utilizaste. Si quieres repetir algun comando solo tienes que escribir: !numero de comando
+
+rm nombreArchivo => es para borrar archivos CUIDADO PUEDES BORRAR EL DISCO DURO
+
+ctrl + L => borrar consola
+
+.................... configuracion de git ...................................
+
+git config --list => muestra las configuraciones que tenemos y las que nos faltan (es muy util cuando quieres comprobar el user)
+
+git config --list --show-origin => muestra la ubicacion de los archivos de configuraciones
+
+git config --global user.name "username" => configura el usuario
+
+git config --global user.email "email" => configura el email
+
+-------------------- comandos de git ----------------------------------------
+
+git init => inicializa el repositorio en el directorio 
+
+git status => muestra el estado del repositiorio del proyecto por ejemplo si hay cambios en stage o que no se han subido.
+
+git add nombreArchivo => para agregar los cambios al repo local 
+
+git rm nombreArchivo => es para borrar los cambios de stached (esto te ayuda cuando te equivocas con el git add)
+
+git rm nombreArchivo => es para borrar los cambios de stached de la memoria cache (esto te ayuda cuando te equivocas con el git add)
+
+git commit -m => es para subir los cambios al repositorio local
+
+
+
+
+
