@@ -5,3 +5,5 @@ mi nombre es pedro rodriguez y tengo 20 años.
 Estoy aprendiendo git.
 
 Soy desarrollador de software.
+
+mi stack es react y .net
