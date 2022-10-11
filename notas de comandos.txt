@@ -52,12 +52,17 @@ git log nombreArchivo => se usa para ver el historial de cambios en el archivo y
 
 git show nombreArchivo => te muestra los cambios que se han ido implmentando en el archivo (este muestra los cambios de codigo)
 
+git diff codigoCambio1 codigoCambio2 => muestra los cambios de codigo que se han hecho en un archivo entre un commit y otro (tienes que poner los codigos de los commit que te tira el comando git log)
+
+
+
 ................ NOTAS.........................
 
 # si haces un commit sin mensaje git te abrira el editor de texto VIM que es un editor de texto pero en linea de commandos y cuando escribes
   el commit le tienes que dar esc + shift + Z + Z
 
-# 
+# en git diff el orden de las versiones que pongas en los parametros definira que registre como cambion. Es decir, si pones el commit mas viejo de primero registrara como ultimos cambios lo del segundo commit, pero si lo haces '
+ al reves pondra los cambios del commit mas viejo como los mas recientes.
 
 
 
