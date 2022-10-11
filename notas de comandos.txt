@@ -58,7 +58,8 @@ git diff codigoCambio1 codigoCambio2 => muestra los cambios de codigo que se han
 
 git checkout codigoCambio nombreArchivo => es para traer cambios en especificos desde el repositorio a tu proyecto (esto es util cuando un compañero realiza unos cambios y tu quieres tener esos cambios)
 
-git reset codigoCambio => se utiliza para devolver el archivo a la version del commit (existen 2 tipos: --soft => devuelve los cambios pero lo que este en staging lo deja ahi pendiente --hard => devuelte todo y lo que este en staging tambien lo borra) 
+git reset codigoCambio => se utiliza para devolver el archivo a la version del commit (existen 2 tipos: --soft => devuelve los cambios pero lo que este en staging lo deja ahi pendiente --hard => devuelte todo y lo que este en staging tambien lo borra
+  --HEAD =>  Este es el comando para sacar archivos del área de staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.) 
 
 
 
@@ -75,6 +76,8 @@ git reset codigoCambio => se utiliza para devolver el archivo a la version del c
 # cuando los cambios son muy largos y te muestra el mensaje del END con la letra Q puedes salirte de ahi y con las flechas ir de arriba a abajo
 
 # Si haces un git checkout y quieres devolverlo a su ultima version de la rama solo tienes que hacer por ejemplo "git checkout master(que es el nombre de la rama) nombreArchivo"
+
+# Si hiciste un git checkout y quieres seguir con esa version de tus cambios, solo tienes que darle un commit a esos cambios y ya estaran en el HEAD de tu rama.
 
 
 
