@@ -1,5 +1,5 @@
 hola este es un ejercicio del curso de git & github.
 
-mi nombre es pedro y tengo 20 años.
+mi nombre es pedro rodriguez y tengo 20 años.
 
 Estoy aprendiendo git.
