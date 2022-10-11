@@ -46,6 +46,12 @@ git rm nombreArchivo => es para borrar los cambios de stached de la memoria cach
 
 git commit -m => es para subir los cambios al repositorio local
 
+git restore nombreArchivo => restaura los cambios en el directorio
+
+git log nombreArchivo => se usa para ver el historial de cambios en el archivo y por quien (este solo muestra el historial de commits)
+
+git show nombreArchivo => te muestra los cambios que se han ido implmentando en el archivo (este muestra los cambios de codigo)
+
 
 
 
