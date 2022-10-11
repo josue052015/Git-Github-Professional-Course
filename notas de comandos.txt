@@ -50,13 +50,15 @@ git restore nombreArchivo => restaura los cambios en el directorio
 
 git log nombreArchivo => se usa para ver el historial de cambios en el archivo y por quien (este solo muestra el historial de commits)
 
+git log --stat => esto te muestra los documentos que cambiaron por commit
+
 git show nombreArchivo => te muestra los cambios que se han ido implmentando en el archivo (este muestra los cambios de codigo)
 
 git diff codigoCambio1 codigoCambio2 => muestra los cambios de codigo que se han hecho en un archivo entre un commit y otro (tienes que poner los codigos de los commit que te tira el comando git log)
 
-git checkout => es para traer cambios en especificos desde el repositorio a tu proyecto (esto es util cuando un compañero realiza unos cambios y tu quieres tener esos cambios)
+git checkout codigoCambio nombreArchivo => es para traer cambios en especificos desde el repositorio a tu proyecto (esto es util cuando un compañero realiza unos cambios y tu quieres tener esos cambios)
 
-git reset => se utiliza para devolver el archivo a la version del commit (existen 2 tipos: --soft => devuelve los cambios pero lo que este en staging lo deja ahi pendiente --hard => devuelte todo y lo que este en staging tambien lo borra) 
+git reset codigoCambio => se utiliza para devolver el archivo a la version del commit (existen 2 tipos: --soft => devuelve los cambios pero lo que este en staging lo deja ahi pendiente --hard => devuelte todo y lo que este en staging tambien lo borra) 
 
 
 
@@ -67,6 +69,12 @@ git reset => se utiliza para devolver el archivo a la version del commit (existe
 
 # en git diff el orden de las versiones que pongas en los parametros definira que registre como cambion. Es decir, si pones el commit mas viejo de primero registrara como ultimos cambios lo del segundo commit, pero si lo haces '
  al reves pondra los cambios del commit mas viejo como los mas recientes.
+
+# el git diff se puede utilizar tambien para ver la comparacion de los cambios en staging solo poniendo "git diff" cuando tengas algo en stage
+
+# cuando los cambios son muy largos y te muestra el mensaje del END con la letra Q puedes salirte de ahi y con las flechas ir de arriba a abajo
+
+# Si haces un git checkout y quieres devolverlo a su ultima version de la rama solo tienes que hacer por ejemplo "git checkout master(que es el nombre de la rama) nombreArchivo"
 
 
 
