@@ -40,9 +40,9 @@ git status => muestra el estado del repositiorio del proyecto por ejemplo si hay
 
 git add nombreArchivo => para agregar los cambios al repo local 
 
-git rm nombreArchivo => es para borrar los cambios de stached (esto te ayuda cuando te equivocas con el git add)
+git rm nombreArchivo => es para borrar los cambios de stached (esto te ayuda cuando te equivocas con el git add) PERSONALMENTE PREFIERO "git reset nombreArchivo HEAD"
 
-git rm nombreArchivo => es para borrar los cambios de stached de la memoria cache (esto te ayuda cuando te equivocas con el git add)
+git rm nombreArchivo => es para borrar los cambios de stached de la memoria cache (esto te ayuda cuando te equivocas con el git add) PERSONALMENTE PREFIERO "git reset nombreArchivo HEAD"
 
 git commit -m => es para subir los cambios al repositorio local
 
@@ -62,6 +62,24 @@ git reset codigoCambio => se utiliza para devolver el archivo a la version del c
 
 git reset nombreArchivo HEAD =>  Este es el comando para sacar archivos del área de staging. No para borrarlos ni nada de eso, solo para que los últimos cambios de estos archivos no se envíen al último commit, a menos que cambiemos de opinión y los incluyamos de nuevo en staging con git add, por supuesto.
 
+git -am "mensaje" => sirve para hacer commits sin tener que agregar los documentos a staging
+
+
+......................Comandos para trabajar con repositorios remotos............................................................
+
+git push => esto es para llevar los cambios del repositorio local al repositorio remoto
+
+git fetch => esto es para traer los cambios de alguien mas a mi repositorio local, pero esto no se refleja en los archivos
+
+git merge => esto se usa cuando quieres reflejar los ultimos cambios de tu repositorio local en tus archivos. Por ejemplo, en el caso de que traigas cambios de otras personas a traves de git fetch.
+
+git pull => hace lo mismo que si hicieras git fetch + git merge (trae los ultimos cambios del repositorio remoto y se te refleja en tus archivos)
+
+....................... trabajo con ramas...............................................
+
+git branch nombreRama => se utiliza para crear una rama nueva
+
+git checkout nombreRama => se utiliza para moverte entre ramas
 
 
 ................ NOTAS.........................
@@ -72,13 +90,16 @@ git reset nombreArchivo HEAD =>  Este es el comando para sacar archivos del áre
 # en git diff el orden de las versiones que pongas en los parametros definira que registre como cambion. Es decir, si pones el commit mas viejo de primero registrara como ultimos cambios lo del segundo commit, pero si lo haces '
  al reves pondra los cambios del commit mas viejo como los mas recientes.
 
-# el git diff se puede utilizar tambien para ver la comparacion de los cambios en staging solo poniendo "git diff" cuando tengas algo en stage
+# el git diff se puede utilizar tambien para ver la comparacion de los cambios en staging solo poniendo "git diff" cuando tengas algo que todavia no este en stage
 
 # cuando los cambios son muy largos y te muestra el mensaje del END con la letra Q puedes salirte de ahi y con las flechas ir de arriba a abajo
 
 # Si haces un git checkout y quieres devolverlo a su ultima version de la rama solo tienes que hacer por ejemplo "git checkout master(que es el nombre de la rama) nombreArchivo"
 
 # Si hiciste un git checkout y quieres seguir con esa version de tus cambios, solo tienes que darle un commit a esos cambios y ya estaran en el HEAD de tu rama.
+
+
+
 
 
 
