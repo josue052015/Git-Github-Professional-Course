@@ -77,7 +77,7 @@ git pull => hace lo mismo que si hicieras git fetch + git merge (trae los ultimo
 
 git remote add origin URLRepo => agrega un origen remoto de los archivos de nuestro repo (esto se usa para agregar el repo remoto de github para que podamos hacer fetch y push al repo en github)
 
-git push origin nombreRama => esto lo que hace es que le dice a git que le envie los archivos de una rama al repositorio remoto en gitHub (en este caso es la rama master)
+git push origin nombreRama => esto lo que hace es que le dice a git que le envie los archivos de una rama al repositorio remoto en gitHub (en este caso es la rama master) 
 
 ....................... trabajo con ramas...............................................
 
@@ -105,6 +105,10 @@ git checkout nombreRama => se utiliza para moverte entre ramas
 # Si hiciste un git checkout y quieres seguir con esa version de tus cambios, solo tienes que darle un commit a esos cambios y ya estaran en el HEAD de tu rama.
 
 #Si quieres hacer un push a un repo y te pide que traigas los cambios existentes en github a tu repo local primero lo que tienes que hacer es "git pull origin nombreRama" (en este caso la rama es master) 
+
+# Si al hacer un git push origin te da un mensaje de error diciendo "refusing to merge unrelated histories" esto pasa porque los commits de los archivos que hay en esa rama del repo en github no coinciden con 
+  los de tu repo local, por eso github cree que no se trata del mismo proyecto, lo que tienes que hacer es escribir el siguiente comando "git pull origin main --allow-unrelated-histories". 
+  Luego te saldra el editor VIM y para salir de ahi le das esc + shift + Z + Z
 
 
 
