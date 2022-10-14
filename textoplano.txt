@@ -2,4 +2,4 @@ hola este es un ejercicio del curso de git & github.
 
 mi nombre es pedro rodriguez y tengo 20 años.
 
-mis hobbies son: tocar la bateria, ver anime y programar.
+mis hobbies son: tocar la bateria y nada mas.
