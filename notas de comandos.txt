@@ -75,11 +75,17 @@ git merge => esto se usa cuando quieres reflejar los ultimos cambios de tu repos
 
 git pull => hace lo mismo que si hicieras git fetch + git merge (trae los ultimos cambios del repositorio remoto y se te refleja en tus archivos)
 
+git remote add origin URLRepo => agrega un origen remoto de los archivos de nuestro repo (esto se usa para agregar el repo remoto de github para que podamos hacer fetch y push al repo en github)
+
+git push origin nombreRama => esto lo que hace es que le dice a git que le envie los archivos de una rama al repositorio remoto en gitHub (en este caso es la rama master)
+
 ....................... trabajo con ramas...............................................
 
 git branch nombreRama => se utiliza para crear una rama nueva
 
 git checkout nombreRama => se utiliza para moverte entre ramas
+
+
 
 
 ................ NOTAS.........................
