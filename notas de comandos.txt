@@ -104,6 +104,7 @@ git checkout nombreRama => se utiliza para moverte entre ramas
 
 # Si hiciste un git checkout y quieres seguir con esa version de tus cambios, solo tienes que darle un commit a esos cambios y ya estaran en el HEAD de tu rama.
 
+#Si quieres hacer un push a un repo y te pide que traigas los cambios existentes en github a tu repo local primero lo que tienes que hacer es "git pull origin nombreRama" (en este caso la rama es master) 
 
 
 
